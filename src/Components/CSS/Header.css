@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 2, 49);
+    border-bottom: 2px solid rgb(57, 21, 92) ;
+    padding: 20px 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    margin-left: 12px;
+}
+
+@media(max-width:768px){
+    nav{
+        font-size: 22px;
+    }
+}
+@media(max-width:410px){
+    nav{
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+}

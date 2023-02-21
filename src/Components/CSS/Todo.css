@@ -1,0 +1,159 @@
+.todo-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.todo-section .card-header-todo{
+    text-align: left;
+    margin-top: -24px;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    width: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-body{
+    width: 70%;
+    margin-top: 12px;
+    padding: 20px 12px;
+}
+.delete-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    text-decoration: none;
+    height: 45px;
+    border: 2px solid rgb(23,2,23);
+    padding: 8px 12px;
+    color: white;
+    font-size: 21px;
+    font-weight: 450;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    background-color: rgb(156, 33, 33);
+}
+.delete-all:hover{
+    background-color: rgb(216, 20, 20);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    padding: 12px ;
+    width: 100%;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 20px;
+    height: auto;
+    background-color: rgba(23,2,23,0.85);
+    border: 2px solid gray;
+    border-radius: 24px;
+    color: white;
+    font-size: 16px;
+    font-weight: 450;
+    letter-spacing: 0.8px;
+    margin: 4px;
+}
+
+.delete-one{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    margin-right: 4px;
+    margin-top: -2px;
+}
+@media(max-width:1004px){
+    .delete-all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        text-decoration: none;
+        height: 32px;
+        border: 2px solid rgb(23,2,23);
+        padding: 6px 9px;
+        color: white;
+        font-size: 17px;
+        font-weight: 350;
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+        background-color: rgb(156, 33, 33);
+    }
+    .todo-section .card-header-todo{
+        text-align: left;
+        margin-top: -84px;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        width: 43%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media(max-width:768px){
+    .card-body{
+        width: 90%;
+        margin-top: 12px;
+        padding: 20px 12px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 6px ;
+        width: 100%;
+    }
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 8px 12px;
+        height: auto;
+        background-color: rgba(23,2,23,0.85);
+        border: 2px solid gray;
+        border-radius: 24px;
+        color: white;
+        font-size: 14px;
+        font-weight: 350;
+        letter-spacing: 0.8px;
+        margin: 4px;
+    }
+    .delete-all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        text-decoration: none;
+        height: 32px;
+        border: 2px solid rgb(23,2,23);
+        padding: 6px 9px;
+        color: white;
+        font-size: 14px;
+        font-weight: 350;
+        cursor: pointer;
+        outline: none;
+        appearance: none;
+        background-color: rgb(156, 33, 33);
+    }
+    .todo-section .card-header-todo{
+        text-align: left;
+        margin-top: -84px;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        width: 73%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
