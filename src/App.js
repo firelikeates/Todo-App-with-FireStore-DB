@@ -35,7 +35,6 @@ const App = (props) => {
   const ClearAll = () => {
     SetItems([])
     var getPromiseFromFirebase = collection(db, "Tasks")
-    // set values to fake array that we created
     getDocs(getPromiseFromFirebase).then(res => res.docs.forEach(snapshot => {
         deleteDoc(doc(db, "Tasks", snapshot.id))
     }))
@@ -43,7 +42,6 @@ const App = (props) => {
 
   const deleteone = (item) => {
     var getPromiseFromFirebase = collection(db, "Tasks")
-    // set values to fake array that we created
     getDocs(getPromiseFromFirebase).then(res => res.docs.forEach(snapshot => {
       if (snapshot.data().Task === item) {
         deleteDoc(doc(db, "Tasks", snapshot.id))
